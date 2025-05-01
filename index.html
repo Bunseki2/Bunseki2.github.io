@@ -1,21 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
-    <title>About</title>
-</head>
-<body>
-    <section class="about-section">
-        <h1>About</h1>
-        <div class="image-container">
-            <img src="images/about.jpg" alt="Profile Picture">
-        </div>
-        <div class="about-text">
-            <p>Takako.</p>
-            <p>first.</p>
-        </div>
-    </section>
-</body>
-</html>
+<section id="about">
+  <div class="about-container">
+    <h1>About</h1>
+    <div class="image-placeholder">
+      <img src="images/about.jpg" alt="Your Profile Picture">
+    </div>
+    <div class="about-text">
+      <p>
+        Hello! I'm a passionate Data Scientist with a
+        strong background in computational chemistry, computational biology and cheminformatics. I'm driven
+        by the desire to solve complex biological problems, create innovative solutions, and contribute to
+        drug discovery.
+      </p>
+      <p>
+        Throughout my journey, I've gained hands-on experience in data analysis, molecular modeling,
+         and machine learning. I'm always eager to learn new
+        technologies and approaches to further enhance my abilities and
+        contribute effectively to challenging and rewarding opportunities.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  #about {
+    padding: 60px 20px; /* Add some top and bottom padding, and side padding for responsiveness */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center content vertically (optional, depending on overall layout) */
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text within the container */
+  }
+
+  .about-container {
+    max-width: 800px; /* Set a maximum width for the content */
+    width: 100%; /* Ensure it takes full width within its parent */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Adjust as needed */
+    margin-bottom: 30px;
+    color: #333; /* Adjust color */
+  }
+
+  .image-placeholder {
+    width: 150px; /* Adjust the size of the circular placeholder */
+    height: 150px;
+    border-radius: 50%; /* Creates the circular shape */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+    border: 5px solid #eee; /* Add a subtle border */
+  }
+
+  .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire circle without distortion */
+  }
+
+  .about-text {
+    max-width: 600px; /* Control the reading width of the text */
+    margin: 0 auto; /* Center the text horizontally */
+  }
+
+  .about-text p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+    color: #555; /* Adjust text color */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .image-placeholder {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px;
+    }
+
+    .about-text {
+      padding: 0 15px; /* Add some side padding on smaller screens */
+    }
+  }
+</style>
