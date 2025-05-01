@@ -137,3 +137,72 @@
     </div>
   </div>
 </section>
+<style>
+  #about {
+    padding: 60px 20px; /* Add some top and bottom padding, and side padding for responsiveness */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center content vertically (optional, depending on overall layout) */
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text within the container */
+  }
+
+  .about-container {
+    max-width: 800px; /* Set a maximum width for the content */
+    width: 100%; /* Ensure it takes full width within its parent */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Adjust as needed */
+    margin-bottom: 30px;
+    color: #333; /* Adjust color */
+  }
+
+  .image-placeholder {
+    width: 150px; /* Adjust the size of the circular placeholder */
+    height: 150px;
+    border-radius: 50%; /* Creates the circular shape */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+    border: 5px solid #eee; /* Add a subtle border */
+  }
+
+  .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire circle without distortion */
+  }
+
+  .about-text {
+    max-width: 600px; /* Control the reading width of the text */
+    margin: 0 auto; /* Center the text horizontally */
+  }
+
+  .about-text p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+    color: #555; /* Adjust text color */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .image-placeholder {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px;
+    }
+
+    .about-text {
+      padding: 0 15px; /* Add some side padding on smaller screens */
+    }
+  }
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+</style>
