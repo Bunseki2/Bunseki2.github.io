@@ -1,46 +1,215 @@
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Projects</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takako's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      #about {
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-container {
+        max-width: 800px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .image-placeholder {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 20px;
+        border: 5px solid #eee;
+      }
+
+      .image-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .about-text {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .about-text p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        color: #555;
+      }
+
+      #projects {
+        padding: 60px 20px;
+      }
+
+      .project-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        background-color: #f0f0f0;
+      }
+
+      .placeholder-img {
+        background-color: #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+        font-size: 1.2em;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2em;
+          margin-bottom: 20px;
+        }
+
+        .image-placeholder {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 15px;
+        }
+
+        .about-text {
+          padding: 0 15px;
+        }
+      }
+    </style>
+</head>
+<body>
+<section id="about">
+  <div class="about-container">
+    <h1>About</h1>
+    <div class="image-placeholder">
+      <img src="image/images-sunflower.jpg" alt="Your Profile Picture">
+    </div>
+    <div class="about-text">
+      <p>
+        Hello! I'm Takako, a passionate Data Scientist with a
+        strong background in computational chemistry, computational biology and cheminformatics. I'm driven
+        by the desire to solve complex biological problems, create innovative solutions, and contribute to
+        drug discovery.
+      </p>
+      <p>
+        Throughout my journey, I've gained hands-on experience in data analysis, molecular modeling,
+         and machine learning. I'm always eager to learn new
+        technologies and approaches to further enhance my abilities and
+        contribute effectively to challenging and rewarding opportunities.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="project-container">
+    <h1>Projects</h1>
+    
+    <!-- First Row - Existing Projects -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
       <div class="col">
         <div class="card h-100">
-          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1 Image">
+          <img src="image/DEL_Kaggle_3.png" class="card-img-top" alt="Project 1 Image">
           <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 class="card-title">Kaggle Competition- 4th place - NeurIPS 2024 - Predict New Medicines with BELKA</h5>
+            <p class="card-text">Predict small molecule-protein interactions using the Big Encoded Library for Chemical Assessment (BELKA)</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-outline-primary btn-sm">Blog Post</a>
-            <a href="#" class="btn btn-outline-secondary btn-sm ms-2">Source Code</a>
+            <a href="https://github.com/Bunseki2/NeurIPS-2024---Predict-New-Medicines-with-BELKA" class="btn btn-outline-secondary btn-sm ms-2">More</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2 Image">
+          <img src="image/dataset-cover.jpg" class="card-img-top" alt="Project 2 Image">
           <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h5 class="card-title">Capstone project: Providing data-driven suggestions for HR</h5>
+            <p class="card-text">This capstone project analyzes an employee dataset from Salifort Motors to predict staff turnover and provide data-driven insights for the HR department. This notebook covers data analysis, building predictive models, model evaluation, and visualizations to understand why employees leave.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="link-primary">Blog Post</a>
-            <a href="#" class="link-secondary ms-2">Source Code</a>
+            <a href="https://github.com/Bunseki2/salifort/blob/main/Salifort_Motors_project_lab_2_conclusion.ipynb"  class="btn btn-outline-secondary btn-sm ms-2">More</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3 Image">
+          <img src="image/dataset-cover traffic.jpg" class="card-img-top" alt="Project 3 Image">
           <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <h5 class="card-title">Metro_Traffic</h5>
+            <p class="card-text">Tableau Dashboard: Visualizations conducted as part of the Minnesota Department of Transportation Traffic Volume Analysis Project, which is a component of my Google Business Intelligence Certificate. The objective is to help monitor traffic patterns and support infrastructure decisions, analyzing traffic volume throughout the year, under different weather conditions, and during holidays.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-info btn-sm">Blog Post</a>
-            <a href="#" class="text-muted ms-2">Source Code</a>
+            <a href="https://public.tableau.com/app/profile/takako1027/viz/Metro_traffic_17360340686130/Dashboard1" class="btn btn-info btn-sm">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row - New Projects -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-img-top placeholder-img">
+            Project Image
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Project Title 4</h5>
+            <p class="card-text">Add your project description here. Explain what the project does, technologies used, and key outcomes.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-outline-secondary btn-sm ms-2">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-img-top placeholder-img">
+            Project Image
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Project Title 5</h5>
+            <p class="card-text">Add your project description here. Explain what the project does, technologies used, and key outcomes.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-outline-secondary btn-sm ms-2">More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-img-top placeholder-img">
+            Project Image
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Project Title 6</h5>
+            <p class="card-text">Add your project description here. Explain what the project does, technologies used, and key outcomes.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-outline-secondary btn-sm ms-2">More</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
