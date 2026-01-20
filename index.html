@@ -1,6 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takako's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      #about {
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-container {
+        max-width: 800px;
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .image-placeholder {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 20px;
+        border: 5px solid #eee;
+      }
+
+      .image-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .about-text {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .about-text p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        color: #555;
+      }
+
+      #projects {
+        padding: 60px 20px;
+      }
+
+      .project-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        background-color: #f0f0f0;
+      }
+
+      .placeholder-img {
+        background-color: #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d;
+        font-size: 1.2em;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2em;
+          margin-bottom: 20px;
+        }
+
+        .image-placeholder {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 15px;
+        }
+
+        .about-text {
+          padding: 0 15px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takako's Portfolio</title>
@@ -114,74 +211,4 @@
     </div>
   </div>
 </section>
-
-<style>
-  #about {
-    padding: 60px 20px; /* Add some top and bottom padding, and side padding for responsiveness */
-    display: flex;
-    justify-content: center; /* Center the container horizontally */
-    align-items: center; /* Center content vertically (optional, depending on overall layout) */
-    flex-direction: column; /* Stack elements vertically */
-    text-align: center; /* Center text within the container */
-  }
-
-  .about-container {
-    max-width: 800px; /* Set a maximum width for the content */
-    width: 100%; /* Ensure it takes full width within its parent */
-  }
-
-  h1 {
-    font-size: 2.5em; /* Adjust as needed */
-    margin-bottom: 30px;
-    color: #333; /* Adjust color */
-  }
-
-  .image-placeholder {
-    width: 150px; /* Adjust the size of the circular placeholder */
-    height: 150px;
-    border-radius: 50%; /* Creates the circular shape */
-    overflow: hidden; /* Ensures the image stays within the circle */
-    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
-    border: 5px solid #eee; /* Add a subtle border */
-  }
-
-  .image-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire circle without distortion */
-  }
-
-  .about-text {
-    max-width: 600px; /* Control the reading width of the text */
-    margin: 0 auto; /* Center the text horizontally */
-  }
-
-  .about-text p {
-    line-height: 1.6; /* Improve readability */
-    margin-bottom: 15px;
-    color: #555; /* Adjust text color */
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-
-    .image-placeholder {
-      width: 120px;
-      height: 120px;
-      margin-bottom: 15px;
-    }
-
-    .about-text {
-      padding: 0 15px; /* Add some side padding on smaller screens */
-    }
-  }
-  <head>
-    <link rel="stylesheet" href="style.css">
-  </head>
-</style>
-
 
